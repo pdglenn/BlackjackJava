@@ -2,8 +2,8 @@ package com.pauldglenn.blackjack;
 
 import org.junit.Test;
 
-
 import static org.junit.Assert.assertEquals;
+
 
 public class CardTest {
     @Test
@@ -13,6 +13,7 @@ public class CardTest {
 
     @Test
     public void queenOfHeartsHasValueOf10(){
+
         assertEquals(10, new Card(12, "H").value());
     }
 
