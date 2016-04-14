@@ -14,20 +14,20 @@ public class Deck {
         List<String> suits = Arrays.asList("S", "H", "C", "D");
         for (String suit : suits){
             for (int i = 1; i < 14; i++){
-                System.out.println("Adding: " + i + " " + suit);
                 cards.add(new Card(i, suit));
             }
         }
     }
 
     public int size() {
-        return 52;
+        return cards.size();
     }
 
     public Card nextCard() {
         Card next;
-
-        return cards.get(0);
+        next = cards.get(0);
+        cards.remove(0);
+        return next;
     }
 
 }

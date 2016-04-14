@@ -14,4 +14,11 @@ public class DeckTest {
     public void topCardOfNewDeckIsAceOfSpades(){
         assertEquals(new Card(1, "S"), new Deck().nextCard());
     }
+
+    @Test
+    public void removingACardReducesSizeOfDeck(){
+        Deck d = new Deck();
+        d.nextCard();
+        assertEquals(51, d.size());
+    }
 }
