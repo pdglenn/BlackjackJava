@@ -9,8 +9,9 @@ public class DeckTest {
 
         assertEquals(52, new Deck().size());
     }
+
     @Test
-    public void test2(){
-        assertEquals(2, 2);
+    public void topCardOfNewDeckIsAceOfSpades(){
+        assertEquals(new Card(1, "S"), new Deck().nextCard());
     }
 }
