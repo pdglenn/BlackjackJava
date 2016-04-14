@@ -27,4 +27,12 @@ public class HandTest {
         h.add(new Card(5, "S"));
         assertEquals(10, h.value());
     }
+
+    @Test
+    public void aHandWithAnAceAndASevenHasValueEighteen(){
+        Hand h = new Hand();
+        h.add(new Card(7, "S"));
+        h.add(new Card(1, "S"));
+        assertEquals(18, h.value());
+    }
 }
