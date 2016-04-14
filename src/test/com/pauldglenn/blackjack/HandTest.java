@@ -12,4 +12,11 @@ public class HandTest {
     public void aHandWithNoCardsHasSizeZero(){
         assertEquals(0, new Hand().size());
     }
+
+    @Test
+    public void aHandWithOneCardHasSizeOne(){
+        Hand h = new Hand();
+        h.add(new Card(1, "S"));
+        assertEquals(1, h.size());
+    }
 }

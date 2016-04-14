@@ -1,10 +1,23 @@
 package com.pauldglenn.blackjack;
 
+import java.util.ArrayList;
+
 /**
  * Created by paulglenn on 4/14/16.
  */
 public class Hand {
+
+    private ArrayList<Card> cards = new ArrayList<>();
+
+    public Hand(){
+
+    }
+
     public int size() {
-        return 0;
+        return cards.size();
+    }
+
+    public void add(Card card) {
+        cards.add(card);
     }
 }
