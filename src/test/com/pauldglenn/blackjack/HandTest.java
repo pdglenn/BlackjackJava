@@ -19,4 +19,12 @@ public class HandTest {
         h.add(new Card(1, "S"));
         assertEquals(1, h.size());
     }
+
+    @Test
+    public void aHandWithTwoFivesHasValueTen(){
+        Hand h = new Hand();
+        h.add(new Card(5, "H"));
+        h.add(new Card(5, "S"));
+        assertEquals(10, h.value());
+    }
 }

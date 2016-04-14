@@ -20,4 +20,12 @@ public class Hand {
     public void add(Card card) {
         cards.add(card);
     }
+
+    public int value() {
+        int total = 0;
+        for (Card card : cards){
+            total += card.value();
+        }
+        return total;
+    }
 }
