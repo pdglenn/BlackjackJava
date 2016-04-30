@@ -1,9 +1,6 @@
 package com.pauldglenn.blackjack;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 // Understands how to hold a deck of 52 unique cards
 public class Deck {
@@ -30,4 +27,7 @@ public class Deck {
         return next;
     }
 
+    public void shuffle() {
+        Collections.shuffle(cards, new Random());
+    }
 }
