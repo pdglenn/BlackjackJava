@@ -38,4 +38,15 @@ public class Hand {
     public boolean isBlackjack() {
         return (cards.size() == 2 && this.value() == 21);
     }
+
+    @Override
+    public String toString(){
+        String result = "";
+        for (Card card : cards){
+            result += card.toString() + " ";
+        }
+        result += this.value();
+        return result;
+    }
 }
+

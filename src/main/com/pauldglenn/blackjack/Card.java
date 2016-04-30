@@ -24,6 +24,6 @@ public class Card {
     }
 
     public String toString(){
-        return "Card: " + rank + suit;
+        return "" + rank + suit;
     }
 }

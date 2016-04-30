@@ -44,4 +44,12 @@ public class HandTest {
         h.add(new Card(1, "S"));
         assertTrue(h.isBlackjack());
     }
+
+    @Test
+    public void aHandCanReportItsContents(){
+        Hand h = new Hand();
+        h.add(new Card(5, "S"));
+        h.add(new Card(8, "H"));
+        assertEquals(h.toString(), "5S 8H 13");
+    }
 }
