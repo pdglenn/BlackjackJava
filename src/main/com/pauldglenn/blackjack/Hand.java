@@ -2,9 +2,7 @@ package com.pauldglenn.blackjack;
 
 import java.util.ArrayList;
 
-/**
- * Created by paulglenn on 4/14/16.
- */
+// Understands how to report the aggregate value of held cards
 public class Hand {
 
     private ArrayList<Card> cards = new ArrayList<>();
@@ -35,5 +33,9 @@ public class Hand {
             aceCount--;
         }
         return total;
+    }
+
+    public boolean isBlackjack() {
+        return (cards.size() == 2 && this.value() == 21);
     }
 }
